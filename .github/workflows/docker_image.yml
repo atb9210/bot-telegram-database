@@ -2,9 +2,9 @@ name: Docker Image CI
 
 on:
   push:
-    branches: [ "master" ]
+    branches: [ "main" ]
   pull_request:
-    branches: [ "master" ]
+    branches: [ "main" ]
 
 jobs:
 
@@ -29,6 +29,6 @@ jobs:
         logout: true # optional, default is true
     - name: Docker Login
         
-      run: docker build . --file Dockerfile --tag atb9210/datadock:latest
+      run: docker build . --file Dockerfile --tag atb9210/bot-telegram-database:1.0
     - name: Push the docker image
-      run : docker push atb9210/datadock:latest
+      run : docker push atb9210/bot-telegram-database:1.0
