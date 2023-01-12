@@ -1,0 +1,5 @@
+version: '3'
+services:
+  databot_compose:
+    image: datadock:lastest
+
