@@ -1,4 +1,4 @@
-# Importing the libraries
+# Importing the libraries...
 import configparser
 from telethon import TelegramClient, events
 import sqlite3
