@@ -147,6 +147,9 @@ async def update(event):
         await client.send_message(SENDER, "<b>Conversation Terminated✔️</b>", parse_mode='html')
         return
 
+######
+###### DELETE COMMANDS 
+######
 
 @client.on(events.NewMessage(pattern="(?i)/delete"))
 async def delete(event):
