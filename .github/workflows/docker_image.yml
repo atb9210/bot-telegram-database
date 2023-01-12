@@ -29,6 +29,6 @@ jobs:
         logout: true # optional, default is true
     - name: Docker Login
         
-      run: docker build . --file Dockerfile --tag atb9210/datadock:latest
+      run: docker build . --file Dockerfile --tag atb9210/bot-telegram-database:latest
     - name: Push the docker image
-      run : docker push atb9210/datadock:latest
+      run : docker push atb9210/bot-telegram-database:latest
